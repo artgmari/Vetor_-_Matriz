@@ -1,0 +1,18 @@
+algoritmo "EX11"
+var
+matrizS: vetor [1..5,1..5] de inteiro
+linha,coluna,soma: inteiro
+inicio
+para linha de 1 ate 5 faca
+ para coluna de 1 ate 5 faca
+  matrizs[linha,coluna] <- randi(10)
+  escreva(matrizs[linha,coluna])
+  se (linha = coluna) entao
+  soma <- soma + matrizs[linha,coluna]
+  fimse
+ fimpara
+ escreval()
+fimpara
+escreval()
+escreval("A soma dos valores da diagonal principal da matriz é", soma)
+fimalgoritmo
